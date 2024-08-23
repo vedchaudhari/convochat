@@ -15,7 +15,7 @@ export const SocketContextProvider = ({ children }) => {
 
     useEffect(() => {
         if (authUser) {
-            const socket = io("https://convochat-qjx5.onrender.com",{
+            const socket = io("https://convochat-app.onrender.com",{
                 query:{
                     userId: authUser._id
                 }
